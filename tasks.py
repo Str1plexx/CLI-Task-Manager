@@ -17,3 +17,19 @@ def add_task(tasks, title):
     tasks[str(new_id)] = new_task
     
     return new_task 
+
+def done_task(tasks, task_id):
+    key = str(task_id)
+    if key in tasks:
+        tasks[key]['is_done'] = True
+        return True
+    else:
+        return False
+
+def delete_task(tasks, task_id):
+    key = str(task_id)
+    if key in tasks:
+        del tasks[key]
+        return True
+    else:
+        return False
