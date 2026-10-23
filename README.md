@@ -101,4 +101,4 @@ $ python3 main.py delete 1
 
 ## 👤 Автор
 
-- **Артур Юнг** — [GitHub](https://github.com/Str1plexx)
+[GitHub](https://github.com/Str1plexx)
