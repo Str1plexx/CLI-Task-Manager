@@ -33,3 +33,15 @@ def delete_task(tasks, task_id):
         return True
     else:
         return False
+
+def list_tasks(tasks, show_all = False):
+    if not tasks:
+        print("Список задач пуст!")
+        return
+
+    for task in tasks.values():
+        if show_all or not task['is_done']:
+            if task['is_done']:
+                print(f'{task['id']}. [x] {task['title']} ({task['created_at']})')
+            else:
+                print(f'{task['id']}. [ ] {task['title']} ({task['created_at']})')
